@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    
+    
+    <title>Potfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="css/estilo.css"> 
+    
+  <!--LINKS-->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Monsieur+La+Doulaise|Pinyon+Script|Playfair+Display|Raleway|Vidaloka" rel="stylesheet">
+  </head>
+    
+    
+ 
+<body>
+  
+ 
+    
+    <nav id="navbar">
+      <a href="#welcome-section "><h1>Lucas Mendes Gabriel</h1></a>
+      <ul>
+        <a id="who-btn" href="#who"><li>Who Am I?</li></a>
+        <a href="#projects"><li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </nav>
+              <!--NAVBAR-->
+  
+  <header>
+    <nav>
+    </nav>
+  </header>
+  
+              <!--WELCOME PAGE-->
+  
+  
+  <main id="main-doc">
+   <section id="welcome-section">
+     <h1>Lucas Mendes Gabriel</h1>
+     <h2>Web Developer</h2>
+     <div id="square"></div>
+   </section>
+    
+                  <!--WHO AM I SECTION-->
+    
+   <section id="who">
+     <h1>But who am I?</h1>
+     <div id="who-text">
+       <p>My name is Lucas Mendes Gabriel, I am a Web Developer from São Paulo, Brazil.<br><br>I have studied web development since 2016, however I had to let my coding aside to re-organize my personal and professional life (finish college (I'm <strong>graduated at Photography</strong> and <strong>specialized in Graphich Design</strong>) and change my carreer from former <strong>Logistics Coordinator at IBM</strong>, to <strong>Property Administrator at Colliers International</strong> to finally <strong>English Teacher</strong> (I know, I know... <em>life's crazy, isn't it?</em>)).<br><br>Since November 2018 I have been focusing again in studying web development. By now I have finished some Udemy courses, Code Academy and finally I'm back to Free Code Camp doing my best to learn a lot out of the curriculum. <a href="https://www.linkedin.com/in/lucas-eduardo-mendes-gabriel-829a189b/" target="_blank">You can see all the courses I've done on my LinkedIn Page</a>.<br><br>I'm also constantly working in some freelancing projects that <a id="profile-link" href="https://github.com/lucasemg" target="_blank">you can see on my GitHub Page</a>.<br><br>And, of course, <a id="profile-link" href="https://www.freecodecamp.org/lucas.emg" target="_blank">check my Free Code Camp profile.</a> I try to be as active as I can at the Free Code Camp forum!</p>
+         
+         
+       <img src="imagens/who_01.jpg" alt="Photo of Lucas Mendes Gabriel">
+     </div>
+     
+   </section>
+     
+              <!--PROJECTS-->
+    
+    
+    <section id="projects">
+      <h1>Projects</h1>
+        
+        <div id="projects-content">
+        <div id="square"></div>
+        <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">  
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <a href="https://lucasemg.github.io/PEC/" target="_blank"><img src="imagens/portfolio/proj_01.jpg"></a>
+                    </div>
+                    <div class="details">
+                        <h3>Personal English Class</h3>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <a href="https://lucasemg.github.io/hoistthatrag/" target="_blank"><img src="imagens/portfolio/proj_02.jpg"></a>
+                    </div> 
+                    <div class="details">
+                        <h3>Tom Waits Tribute Page</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </section>
+      
+     <!--CONTACT-->
+    <section id="contact">
+      <h1>Contact</h1>
+      <img id="mail" src="imagens/social/mail.png">
+        
+        
+        <div id="social-media">
+       <a href="https://www.facebook.com/lucaseduardo.mendesgabriel" target="_blank"><img src="imagens/social/facebook.png"></a>
+     <a href="https://twitter.com/lucasemg" target="_blank"><img src="imagens/social/twitter.png" ></a>
+       <a href="https://www.instagram.com/luscamendes/" target="_blank"><img src="imagens/social/instagram.png"></a>
+     <a href="https://www.linkedin.com/in/lucas-eduardo-mendes-gabriel-829a189b/" target="_blank"><img src="imagens/social/linkedin.png"></a>
+    <a href="https://github.com/lucasemg" target="_blank"><img src="imagens/social/github.png"></a>
+      </div>
+        
+        <a href="mailto:lucas.gabriel3.lg@gmail.com"><h2>lucas.gabriel3.lg@gmail.com</h2></a>
+        
+      <p>If you like my how my coding is going, contact me! I'd love to have a cup of coffee, a beer, a cup of tea or maybe just a Skype chat sometimes:</p>
+        
+        
+        
+        
+      <form id="contact-form" action="https://formspree.io/lucas.gabriel3.lg@gmail.com" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" placeholder="Introduce yourself :)" name="Name"><br>
+          
+          <label for="email">E-Mail:</label><br>
+          <input type="email" id="email" placeholder="I promise I won't send you cat memes (unless you want me to)" name="E-Mail"><br>
+          
+          <label for="message">Message:</label><br>
+          <textarea id="name" placeholder="Invitations regarding projects and/or coffee will be highly appreciated" name="Message"></textarea><br>
+          
+          <div id="btn-flex">
+          <input id="btn-submit" type="submit" value="Send">
+            </div>
+        </form>
+        <br>
+        
+        
+      
+     
+    </section>
+      
+      
+  </main>
+    
+    
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <scrip type="text/javascript" src="js/script.js"></scrip>
+    
+    <!-- Initialize Swiper -->
+  <script>
+      
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+    
+    
+</body>
+  
+</html>

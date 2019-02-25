@@ -1,0 +1,1315 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*-----------Navbar-----------*/
+
+#navbar {
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  
+}
+
+#navbar h1 {
+  font-family: 'Monsieur La Doulaise', cursive;
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;  
+}
+
+#navbar li {
+  display: inline;
+  margin: 10px 25px 10px 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+#navbar a {
+  text-decoration: none;
+  
+}
+
+#navbar li:hover {
+  text-decoration: underline;
+}
+
+
+/*-----------WELCOME-----------*/
+
+#welcome-section {
+  background-color: #afd1fe;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  z-index: ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 60px;
+  color: #1f1f1f;
+  z-index: 2;
+}
+
+#welcome-section h2 {
+  font-family: 'Vidaloka', serif;
+  color: #1f1f1f;
+  z-index: 2;
+}
+
+#square {
+  width: 300px;  
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  animation: losango;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  background-color: pink;
+  transform: rotate(45deg);
+}
+
+
+
+@keyframes losango {
+  25% {
+    width: 400px;
+  }
+  50% {
+    height: 400px;
+  }
+  
+  75% {
+    transform: skew(-25deg);
+  }
+  
+}
+
+/*-----------WHO AM I-----------*/
+
+#who {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fdfdb9;
+  padding: 30px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#who h1 {
+  align-self: center;
+  font-family: 'Vidaloka', serif;
+  margin-top: 50px;
+  font-size: 40px;
+  color: #1f1f1f;
+}
+
+#who-text {
+  margin-top: 30px;
+  padding: 0px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+#who-text img {
+    
+  height: 300px;
+  border-radius: 50%;
+  flex-shrink: 10;
+  align-self: center;
+}
+
+#who-text p {  
+  overflow-y: auto;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background-color: #fefcd7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  line-height: 1.6em;
+  
+}
+
+#who-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #033681;
+}
+
+
+
+
+/*---------PROJECTS SECTION---------*/
+
+#projects {  
+    background-color: #afd1fe;
+    height: 100vh;
+    width: 100vw;
+    
+  
+}
+
+#projects-content {
+    display: flex;
+    padding-top: px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h1 {
+    z-index: 3;
+    font-family: 'Vidaloka', serif;
+    font-size: 40px;
+    color: #1f1f1f;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center
+        
+}
+
+
+
+/*---------SLIDES PROJETOS----------*/
+
+
+.swiper-container 
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+}
+
+.imgBx img {
+    width: 350px;
+    height: 300px;
+}
+
+.details {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 2px;
+    text-align: center;
+}
+
+
+
+/*--------CONTACT-------*/
+
+#contact {
+  background-color: #fdfdb9;
+  width: 100vw;
+  height: 120vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h1 {
+  margin: 20px 0px;
+  align-self: center;
+  font-family: 'Vidaloka', serif;
+  font-size: 40px;
+  margin-top: 80px;
+  color: #1f1f1f;
+}
+
+#contact p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+#contact a {
+  text-decoration: none;
+    margin: 15px 0px;
+}
+
+#contact a>h2 {
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #1f1f1f;
+  font-family: 'Raleway', sans-serif;    
+  color: #ffed61;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+#contact a>h2:hover {
+  text-decoration: none;
+  background-color: #1f1f1f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+#mail {
+  width: 60px;
+  padding: 10px 0px;
+  animation-name: mailto;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mailto {
+  0% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+
+
+input {
+    width: 80vw;
+    height: 30px;
+    resize: vertical;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffed61;
+    border: none;
+    border-bottom: solid 1px #b5b4ab;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    padding: 20px 0px;
+}
+
+textarea {
+    width: 80vw;
+    height: 60px;
+    resize: vertical;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffed61;
+    border: none;
+    border-bottom: solid 1px #b5b4ab;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+#btn-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-submit { 
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border: solid 1px #b5b4ab;
+    border-radius: 10px;
+    font-size: 20px;
+    display: inline;
+    border: none;
+    transition: 0.1s;
+}
+
+#btn-submit:hover { 
+    background-color: #1f1f1f;
+    color: #ffed61;
+    transition: 0.1s;
+}
+
+#social-media {
+  
+  padding: 5px 0;
+  width: 60%;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#social-media img {
+  width: 30px;
+  transition: 0.2s;
+}
+
+#social-media img:hover {
+  width: 40px;
+  transition: 0.2s;
+}
+
+
+
+/*---------SCROLLBAR---------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fdfdb9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fbf57e;
+}
+
+
+/*---------MEDIA QUERRIES---------*/
+
+@media screen and (max-width:400px) {
+    
+    /*---------Barra de Navegação---------*/
+    #navbar {
+        padding: 8px;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    #navbar h1 {
+        margin-left: 0px;
+    }
+    
+    #navbar ul {
+        padding: 0px;
+    }
+    
+    #navbar li {
+        font-size: 16px;
+        margin: 0px 15px;
+    }
+    
+    /*---------Welcome---------*/
+    #welcome-section h1 {
+      font-size: 30px;
+    }
+
+    #welcome-section h2 {
+    }
+
+    #square {
+      width: 200px;  
+      height: 100px;
+    }
+    
+        @keyframes losango {
+      25% {
+        width: 220px;
+      }
+      50% {
+        height: 220px;
+      }
+
+      75% {
+        transform: skew(-25deg);
+      }
+
+    }
+    
+    /*---------Who Am I---------*/
+    
+    #who h1 {
+      align-self: center;
+      font-family: 'Vidaloka', serif;
+      margin-top: 65px;
+        margin-bottom: -30px;
+      font-size: 30px;
+      color: #1f1f1f;
+    }
+    
+    #who-text {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #who-text img {
+        height: 130px;
+        margin: 5px 0px;
+    }
+    
+    #who-text p {
+        width: 90vw;
+    }
+    
+    #who-text p {  
+      margin-right: 5px;
+      margin-bottom: 7px;
+      padding: 5px;
+      background-color: #fefcd7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      line-height: 1.6em;
+
+    }
+    
+    /*---------Projects---------*/
+    
+    #projects h1 {
+        font-size: 30px;
+        padding-top: 95px;
+        padding-bottom: 10px;
+        
+    }
+
+
+
+    /*---------SLIDES PROJETOS----------*/
+
+
+    .swiper-container 
+    {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .swiper-slide 
+    {
+        background-position: center;
+        background-size: cover;
+        width: 230px;
+        height: 180px;
+        background: #fff;
+        
+    }
+
+    .imgBx img {
+        width: 230px;
+        height: 180px; 
+    }
+
+    .details {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /*--------CONTACT-------*/
+    
+    #contact {
+        height: 160vh;
+    }
+
+    #contact h1 {
+      font-size: 30px;
+      margin-top: 95px;
+    }
+
+    #contact p {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    #contact a {
+        margin: 10px 0px;
+    }
+
+    #contact a>h2 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 90vw;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 90vw;
+        font-size: 10px;
+    }     
+    
+    /*---------SCROLLBAR---------*/
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+}
+    
+}
+
+@media (min-width:400px) and (max-width:498px)  {
+    
+    /*---------Barra de Navegação---------*/
+    #navbar {
+        padding: 8px;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    #navbar h1 {
+        margin-left: 0px;
+    }
+    
+    #navbar ul {
+        padding: 0px;
+    }
+    
+    #navbar li {
+        font-size: 16px;
+        margin: 0px 15px;
+    }
+    
+    /*---------Welcome---------*/
+    #welcome-section h1 {
+      font-size: 30px;
+    }
+
+    #welcome-section h2 {
+    }
+
+    #square {
+      width: 200px;  
+      height: 100px;
+    }
+    
+        @keyframes losango {
+      25% {
+        width: 220px;
+      }
+      50% {
+        height: 220px;
+      }
+
+      75% {
+        transform: skew(-25deg);
+      }
+
+    }
+    
+    /*---------Who Am I---------*/
+    
+    #who {
+        height: 200vh;
+    }
+    
+    #who h1 {
+      align-self: center;
+      font-family: 'Vidaloka', serif;
+      margin-top: 65px;
+        margin-bottom: -30px;
+      font-size: 30px;
+      color: #1f1f1f;
+    }
+    
+    #who-text {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #who-text img {
+        height: 130px;
+        margin: 5px 0px;
+    }
+    
+    #who-text p {
+        width: 90vw;
+    }
+    
+    #who-text p {  
+      margin-right: 5px;
+      margin-bottom: 7px;
+      padding: 5px;
+      background-color: #fefcd7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      line-height: 1.6em;
+
+    }
+    
+    /*---------Projects---------*/
+    
+    #projects {
+        height: 140vh;
+    }
+    
+    #projects h1 {
+        font-size: 30px;
+        padding-top: 95px;
+        padding-bottom: 10px;
+        
+    }
+
+
+
+    /*---------SLIDES PROJETOS----------*/
+
+
+    .swiper-container 
+    {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .swiper-slide 
+    {
+        background-position: center;
+        background-size: cover;
+        width: 230px;
+        height: 180px;
+        background: #fff;
+        
+    }
+
+    .imgBx img {
+        width: 230px;
+        height: 180px; 
+    }
+
+    .details {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /*--------CONTACT-------*/
+    
+    #contact {
+        height: 240vh;
+    }
+
+    #contact h1 {
+      font-size: 30px;
+      margin-top: 95px;
+    }
+
+    #contact p {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    #contact a {
+        margin: 10px 0px;
+    }
+
+    #contact a>h2 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 90vw;
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 90vw;
+        font-size: 10px;
+    }     
+    
+    /*---------SCROLLBAR---------*/
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+}
+    
+}
+
+@media (min-width:498px) and (max-width:630px)  {
+    
+    /*---------Barra de Navegação---------*/
+    #navbar {
+        padding: 8px;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    #navbar h1 {
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    
+    #navbar ul {
+        padding: 0px;
+    }
+    
+    #navbar li {
+        font-size: 20px;
+        margin: 0px 15px;
+    }
+    
+    /*---------Welcome---------*/
+    #welcome-section h1 {
+      font-size: 50px;
+    }
+
+    #welcome-section h2 {
+    }
+
+    #square {
+      width: 300px;  
+      height: 200px;
+    }
+    
+        @keyframes losango {
+      25% {
+        width: 320px;
+      }
+      50% {
+        height: 320px;
+      }
+
+      75% {
+        transform: skew(-25deg);
+      }
+
+    }
+    
+    /*---------Who Am I---------*/
+    
+    #who {
+        height: 100vh;
+    }
+    
+    #who h1 {
+      align-self: center;
+      font-family: 'Vidaloka', serif;
+      margin-top: 65px;
+        margin-bottom: -30px;
+      font-size: 30px;
+      color: #1f1f1f;
+    }
+    
+    #who-text {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #who-text img {
+        height: 170px;
+        margin: 5px 0px;
+    }
+    
+    #who-text p {
+        width: 90vw;
+    }
+    
+    #who-text p {  
+      margin-right: 5px;
+      margin-bottom: 7px;
+      padding: 5px;
+      background-color: #fefcd7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      line-height: 1.6em;
+
+    }
+    
+    /*---------Projects---------*/
+    
+    #projects {
+        height: 100vh;
+    }
+    
+    #projects h1 {
+        font-size: 30px;
+        padding-top: 95px;
+        padding-bottom: 90px;
+        
+    }
+
+
+
+    /*---------SLIDES PROJETOS----------*/
+
+
+    .swiper-container 
+    {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .swiper-slide 
+    {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 250px;
+        background: #fff;
+        
+    }
+
+    .imgBx img {
+        width: 300px;
+        height: 250px; 
+    }
+
+    .details {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /*--------CONTACT-------*/
+    
+    #contact {
+        height: 120vh;
+    }
+
+    #contact h1 {
+      font-size: 30px;
+      margin-top: 95px;
+    }
+
+    #contact p {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    #contact a {
+        margin: 10px 0px;
+    }
+
+    #contact a>h2 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 90vw;
+        font-size: 12px;
+    }     
+    
+    /*---------SCROLLBAR---------*/
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+}
+    
+}
+
+@media (min-width:630px) and (max-width:818px)  {
+    
+    /*---------Barra de Navegação---------*/
+    
+    
+    
+    #navbar h1 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    
+    #navbar ul {
+        padding: 20px;
+    }
+    
+    #navbar li {
+        margin: 0px 15px;
+    }
+    
+    /*---------Welcome---------*/
+    #welcome-section h1 {
+      font-size: 50px;
+    }
+
+    #welcome-section h2 {
+    }
+
+    #square {
+      width: 300px;  
+      height: 200px;
+    }
+    
+        @keyframes losango {
+      25% {
+        width: 320px;
+      }
+      50% {
+        height: 320px;
+      }
+
+      75% {
+        transform: skew(-25deg);
+      }
+
+    }
+    
+    /*---------Who Am I---------*/
+    
+    #who {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #who h1 {
+      
+      font-family: 'Vidaloka', serif;
+      margin-top: 50px;
+        margin-bottom: -30px;
+      font-size: 30px;
+      color: #1f1f1f;
+    }
+    
+    #who-text {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #who-text img {
+        height: 150px;
+        margin: 5px 0px;
+    }
+    
+    #who-text p {
+        width: 90vw;
+    }
+    
+    #who-text p {  
+      margin-right: 5px;
+      margin-bottom: 7px;
+      padding: 5px;
+      background-color: #fefcd7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      line-height: 1.6em;
+
+    }
+    
+    /*---------Projects---------*/
+    
+    #projects {
+        height: 100vh;
+    }
+    
+    #projects h1 {
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        
+    }
+
+
+
+    /*---------SLIDES PROJETOS----------*/
+
+
+    .swiper-container 
+    {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .swiper-slide 
+    {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 250px;
+        background: #fff;
+        
+    }
+
+    .imgBx img {
+        width: 300px;
+        height: 250px; 
+    }
+
+    .details {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /*--------CONTACT-------*/
+    
+    #contact {
+        height: 120vh;
+    }
+
+    #contact h1 {
+      font-size: 30px;
+      margin-top: 80px;
+    }
+
+    #contact p {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    #contact a {
+        margin: 10px 0px;
+    }
+
+    #contact a>h2 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 90vw;
+        font-size: 12px;
+    }     
+    
+    /*---------SCROLLBAR---------*/
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+}
+    
+}
+
+@media (min-width:818px) and (max-width: 1200px)  {
+    
+    /*---------Barra de Navegação---------*/
+    
+    
+    
+    #navbar h1 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    
+    #navbar ul {
+        padding: 20px;
+    }
+    
+    #navbar li {
+        margin: 0px 15px;
+    }
+    
+    /*---------Welcome---------*/
+    #welcome-section h1 {
+      font-size: 50px;
+    }
+
+    #welcome-section h2 {
+    }
+
+    #square {
+      width: 300px;  
+      height: 200px;
+    }
+    
+        @keyframes losango {
+      25% {
+        width: 320px;
+      }
+      50% {
+        height: 320px;
+      }
+
+      75% {
+        transform: skew(-25deg);
+      }
+
+    }
+    
+    /*---------Who Am I---------*/
+    
+    #who {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #who h1 {
+      
+      font-family: 'Vidaloka', serif;
+      margin-top: 50px;
+        margin-bottom: -30px;
+      font-size: 30px;
+      color: #1f1f1f;
+    }
+    
+    #who-text {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #who-text img {
+        height: 200px;
+        margin: 20px 0px;
+    }
+    
+    #who-text p {
+        width: 90vw;
+    }
+    
+    #who-text p {  
+      margin-right: 5px;
+      margin-bottom: 7px;
+      padding: 5px;
+      background-color: #fefcd7;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      line-height: 1.6em;
+
+    }
+    
+    /*---------Projects---------*/
+    
+    #projects {
+        height: 100vh;
+    }
+    
+    #projects h1 {
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        
+    }
+
+
+
+    /*---------SLIDES PROJETOS----------*/
+
+
+    .swiper-container 
+    {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-bottom: 50px;
+    }
+
+
+    .swiper-slide 
+    {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 250px;
+        background: #fff;
+        
+    }
+
+    .imgBx img {
+        width: 300px;
+        height: 250px; 
+    }
+
+    .details {
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    /*--------CONTACT-------*/
+    
+    #contact {
+        height: 120vh;
+    }
+
+    #contact h1 {
+      font-size: 30px;
+      margin-top: 80px;
+    }
+
+    #contact p {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    #contact a {
+        margin: 10px 0px;
+    }
+
+    #contact a>h2 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 90vw;
+        font-size: 12px;
+    }     
+    
+    /*---------SCROLLBAR---------*/
+    
+    ::-webkit-scrollbar {
+    width: 5px;
+}
+    
+}
+
+
+
+
+
